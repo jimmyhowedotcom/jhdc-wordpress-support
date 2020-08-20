@@ -4,27 +4,33 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "65ca1da6eb79f4f8927cbd2d00373cbb",
+    "content-hash": "11e8b18c548600248ff0e8c3c07d8f90",
     "packages": [],
     "packages-dev": [
         {
-            "name": "yahnis-elsts/wp-update-server",
-            "version": "v1.3.1",
+            "name": "yahnis-elsts/plugin-update-checker",
+            "version": "v4.9",
             "source": {
                 "type": "git",
-                "url": "https://github.com/YahnisElsts/wp-update-server.git",
-                "reference": "230dc366b5b5ccfb9e484de33188f76250f1b6cb"
+                "url": "https://github.com/YahnisElsts/plugin-update-checker.git",
+                "reference": "28f29c940cc22754aff85a99645e3c0a51c097e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/YahnisElsts/wp-update-server/zipball/230dc366b5b5ccfb9e484de33188f76250f1b6cb",
-                "reference": "230dc366b5b5ccfb9e484de33188f76250f1b6cb",
+                "url": "https://api.github.com/repos/YahnisElsts/plugin-update-checker/zipball/28f29c940cc22754aff85a99645e3c0a51c097e8",
+                "reference": "28f29c940cc22754aff85a99645e3c0a51c097e8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "ext-json": "*",
+                "php": ">=5.2.0"
             },
             "type": "library",
+            "autoload": {
+                "files": [
+                    "load-v4p9.php"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -37,15 +43,15 @@
                     "role": "Developer"
                 }
             ],
-            "description": "Custom update API server for WordPress plugins and themes.",
-            "homepage": "https://github.com/YahnisElsts/wp-update-server/",
+            "description": "A custom update checker for WordPress plugins and themes. Useful if you can't host your plugin in the official WP repository but still want it to support automatic updates.",
+            "homepage": "https://github.com/YahnisElsts/plugin-update-checker/",
             "keywords": [
                 "automatic updates",
                 "plugin updates",
                 "theme updates",
                 "wordpress"
             ],
-            "time": "2017-12-08T13:15:52+00:00"
+            "time": "2020-02-07T11:07:19+00:00"
         }
     ],
     "aliases": [],

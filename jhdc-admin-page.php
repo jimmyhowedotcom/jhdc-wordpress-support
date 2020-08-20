@@ -73,3 +73,24 @@ function remove_footer_admin () {
 }
 
 add_filter('admin_footer_text', 'remove_footer_admin');
+
+
+
+
+
+
+
+
+
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+    'https://github.com/jimmyhowedotcom/jhdc-wordpress-support/',
+    __FILE__,
+    'jhdc-wordpress-support'
+);
+
+//Optional: If you're using a private repository, specify the access token like this:
+$myUpdateChecker->setAuthentication('your-token-here');
+
+//Optional: Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('stable-branch-name');
