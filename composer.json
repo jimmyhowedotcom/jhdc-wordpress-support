@@ -1,0 +1,16 @@
+{
+    "name": "jimmyhowedotcom/jhdc-admin",
+    "description": "JHDC WordPress Admin",
+    "type": "wordpress-plugin",
+    "license": "JHDC",
+    "authors": [
+        {
+            "name": "James Howe",
+            "email": "James.Howe@sds.co.uk"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "yahnis-elsts/wp-update-server": "^1.3"
+    }
+}
